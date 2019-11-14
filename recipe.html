@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Luke's Favorite Recipes</title>
+    <link rel="shortcut icon" href="images/food.ico">
+    <style media="screen">
+      body {
+        background-image: url(images/background.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #4F6367;
+        color: #EEF5DB;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+      .title-text {
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        font-size: 60px;
+        color: #EEF5DB;
+        width: 100%;
+        background-color: #B8D8D8
+      }
+      .title-table {
+        text-align: center;
+        border: 4px solid #FE5F55;
+        font-size: 60px;
+        background-color: #4F6367;
+      }
+      .recipe {
+        text-align: center;
+        font-size: 20px;
+        width: 60%;
+        border: 2px solid #B8D8D8;
+        background-color: #4F6367;
+      }
+      th, td {
+        border: 2px solid #B8D8D8;
+      }
+      .header {
+        font-size: 120px;
+        font-weight: bold;
+        background-color: #FE5F55;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 3px solid #FE5F55;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: 2px solid #B8D8D8;
+        outline: none;
+        background-color: #4F6367;
+        color: #EEF5DB;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <h1 class="title-text">Luke's Favorite Recipes!</h1>
+    <table class="title-table" align="center">
+      <tr>
+        <th>Recipes</th>
+      </tr>
+      <tr>
+        <td><a href="#hotwings">Hot Wings</a></td>
+      </tr>
+      <tr>
+        <td><a href="#alfredo">Fettuccine Alfredo</a></td>
+      </tr>
+      <tr>
+        <td><a href="#chili">Chili</a></td>
+      </tr>
+      <tr>
+        <td><a href="chickenpotpie">Chicken Pot Pie</a></td>
+      </tr>
+      <tr>
+        <td><a href="#icecream">Ice Cream</a></td>
+      </tr>
+    </table>
+    <hr style="height:60pt; visibility:hidden;"/>
+    <h1 class="header"><a name="hotwings"> Hot Wings</a></h1>
+    <img src="images/hotwings.jpg" alt="Hot Wings">
+    <br>
+    <table class="recipe" align="center">
+      <tr>
+        <th>Ingredients</th>
+        <th>Directions</th>
+      </tr>
+      <tr>
+        <td>1/3 Cup Melted Butter</td>
+        <td>Preheat oven to 450°F. Mix butter and hot sauce in medium bowl; set aside.</td>
+      </tr>
+      <tr>
+        <td>1/2 Cup Hot Sause</td>
+        <td>Arrange wings on large foil-lined pan. Bake on lowest oven rack for 30 minutes or until crispy, turning once.</td>
+      </tr>
+      <tr>
+        <td>2 1/2 Pounds Chicken Wing Pieces</td>
+        <td>Toss wings in sauce mixture until well coated. Serve with blue cheese and celery, if desired.</td>
+      </tr>
+    </table>
+    <h1 align="center"><a href="https://www.franksredhot.com/recipes/franks-redhot-original-buffalo-chicken-wings?gclid=EAIaIQobChMImMqYuZrl5QIVjP7jBx0y4A4wEAAYASAAEgIuGfD_BwE&gclsrc=aw.ds" target="_blank"> Click here for recipe page!</a></h1>
+    <br>
+    <h1 class="header"><a name="alfredo">Fettuccine Alfredo</a></h1>
+    <img src="images/alfredo.jpg" alt="Fettuccine Alfredo">
+    <br>
+    <table class="recipe" align="center">
+      <tr>
+      <th>Ingredients</th>
+      <th>Directions</th>
+    </tr>
+    <tr>
+      <td>1/2 Cup Butter</td>
+      <td>In a medium saucepan, melt butter.</td>
+    </tr>
+    <tr>
+      <td>8 Ounces Cream Cheese</td>
+      <td>When butter is melted, add cream cheese.</td>
+    </tr>
+    <tr>
+      <td>1 Pint Heavy Cream</td>
+      <td>When the cream cheese is softened, add heavy cream.</td>
+    </tr>
+    <tr>
+      <td>1 Teaspoon Garlic Powder</td>
+      <td>Season with garlic powder, salt, and pepper.</td>
+    </tr>
+    <tr>
+      <td>Salt</td>
+      <td>Simmer for 15-20 minutes over low heat, stirring constantly.</td>
+    </tr>
+    <tr>
+      <td>Black Pepper</td>
+      <td>Remove from heat and stir in parmesan.</td>
+    </tr>
+    <tr>
+      <td>2/3 Cup Grated Parmesan Cheese (Preferably Fresh)</td>
+      <td>Serve over hot fettucine noodles.</td>
+    </tr>
+    <tr>
+      <td>1 Pound Fettuccine, Prepared as directed</td>
+      <td>-------------</td>
+    </tr>
+    </table>
+    <h1 align="center"><a href="https://www.food.com/recipe/olive-garden-fettuccine-alfredo-8596" target="_blank"> Click here for recipe page!</a></h1>
+    <br>
+    <h1 class="header"><a name="chili">Chili</a></h1>
+    <img src="images/chili.jpg" alt="Chili">
+    <br>
+    <table class="recipe" align="center">
+      <tr>
+        <th>Ingredients</th>
+        <th>Directions</th>
+      </tr>
+      <tr>
+        <td>1 Tbsp. Extra-Virgin Olive Oil</td>
+        <td>In a large pot over medium heat, heat oil. Add onion and cook until soft, about 5 minutes. Stir in garlic and cook until fragrant, about 1 minute more, then add tomato paste, stirring to combine. Add ground beef and cook until no longer pink. Drain fat and return to heat.</td>
+      </tr>
+      <tr>
+        <td>1/2 Large White Onion, Chopped</td>
+        <td>Add chili powder, cumin, oregano, paprika, cayenne (if using), and season generously with salt and pepper. Pour in kidney beans and crushed tomatoes and bring chili to a boil. Reduce heat and simmer 20 minutes. Season with more salt and pepper, if necessary.</td>
+      </tr>
+      <tr>
+        <td>3 Cloves Garlic, Minced</td>
+        <td>Ladle into bowls and top with cheddar, sour cream, and green onions.</td>
+      </tr>
+      <tr>
+        <td>2 Tbsp. Tomato Paste</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1 1/2 Pound Ground Beef</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1 1/2 Tbsp. Chili Powder</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1 tsp. Dried Oregano</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1/2 tsp. Paprika</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1/4 tsp. Cayenne Pepper</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>Kosher Salt</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>Freshly Ground Black Pepper</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1 (15-oz) Can Kidney Beans, Drained</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1 (28-oz) Can Crushed Tomatoes</td>
+        <td>-------------</td>
+      </tr>
+    </table>
+    <h1 align="center"><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a58253/best-homemade-chili-recipe/" target="_blank">Click here for recipe page!</a></h1>
+    <br>
+    <h1 class="header"><a name="chickenpotpie">Chicken Pot Pie</a></h1>
+    <img src="images/chickenpotpie.jpg" alt="Chicken Pot Pie">
+    <br>
+    <table class="recipe" align="center">
+      <tr>
+        <th>Ingredients</th>
+        <th>Directions</th>
+      </tr>
+      <tr>
+        <td>Refridgerated Pie Crust</td>
+        <td>Heat oven to 425°F. Prepare pie crusts as directed on box for Two-Crust Pie using 9-inch glass pie pan.</td>
+      </tr>
+      <tr>
+        <td>1/3 Cup Butter Or Margarine</td>
+        <td>In 2-quart saucepan, melt butter over medium heat. Add onion; cook 2 minutes, stirring frequently, until tender. Stir in flour, salt and pepper until well blended. Gradually stir in broth and milk, cooking and stirring until bubbly and thickened.</td>
+      </tr>
+      <tr>
+        <td>1/3 Cup Chopped Onion</td>
+        <td>
+Stir in chicken and mixed vegetables. Remove from heat. Spoon chicken mixture into crust-lined pan. Top with second crust; seal edge and flute. Cut slits in several places in top crust.</td>
+      </tr>
+      <tr>
+        <td>1/3 Cup All-Purpose Flower</td>
+        <td>Bake 30 to 40 minutes or until crust is golden brown. During last 15 to 20 minutes of baking, cover crust edge with strips of foil to prevent excessive browning. Let stand 5 minutes before serving.</td>
+      </tr>
+      <tr>
+        <td>1/2 Teaspoon Salt</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1/4 Teaspoon Pepper</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1 3/4 Cups Chicken Broth</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1/2 Cup Milk</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>2 1/2 Cups Shredded Cooked Chicken Or Turkey</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>2 Cups Frozen Mixed Vegetables, Thawed</td>
+        <td>-------------</td>
+      </tr>
+    </table>
+    <h1 align="center"><a href="https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992" target="_blank">Click here for recipe page!</a></h1>
+    <br>
+    <h1 class="header"><a name="icecream">Ice Cream</a></h1>
+    <img src="images/icecream.jpg" alt="Ice Cream">
+    <br>
+    <table class="recipe" align="center">
+      <tr>
+        <th>Ingredients</th>
+        <th>Directions</th>
+      </tr>
+      <tr>
+        <td>2 Cups Heavy Cream</td>
+        <td>In a small pot, simmer heavy cream, milk, sugar and salt until sugar completely dissolves, about 5 minutes. Remove pot from heat. In a separate bowl, whisk yolks. Whisking constantly, slowly whisk about a third of the hot cream into the yolks, then whisk the yolk mixture back into the pot with the cream. Return pot to medium-low heat and gently cook until mixture is thick enough to coat the back of a spoon (about 170 degrees on an instant-read thermometer).</td>
+      </tr>
+      <tr>
+        <td>1 Cup Whole Milk</td>
+        <td>Strain through a fine-mesh sieve into a bowl. Cool mixture to room temperature. Cover and chill at least 4 hours or overnight. Churn in an ice cream machine according to manufacturers’ instructions. Serve directly from the machine for soft serve, or store in freezer until needed.</td>
+      </tr>
+      <tr>
+        <td>2/3 Cup Sugar</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>1/8 Teaspoon Fine Sea Salt</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>6 Large Egg Yolks</td>
+        <td>-------------</td>
+      </tr>
+      <tr>
+        <td>Your Choice Of Flavoring</td>
+        <td>-------------</td>
+      </tr>
+    </table>
+    <h1 align="center"><a href="https://cooking.nytimes.com/recipes/1016605-the-only-ice-cream-recipe-youll-ever-need" target="_blank">Click here for recipe page!</a></h1>
+  </body>
+</html>
